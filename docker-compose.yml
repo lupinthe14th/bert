@@ -1,0 +1,11 @@
+---
+version: "3.6"
+services:
+  tf:
+    env_file:
+      - .env
+    image: tensorflow/tensorflow
+    volumes:
+      - ./:/app
+    working_dir:
+      /app
